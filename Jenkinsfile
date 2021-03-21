@@ -1,5 +1,7 @@
 pipeline {
-    agent docker {image 'python'}
+    agent {
+        docker { image 'python' }
+    }
     stages {
         stage('Run Tests') {
             parallel {
