@@ -8,13 +8,13 @@ pipeline {
                 stage('Test On Windows') {
                    
                     steps {
-                        sh 'python3 -m pytest'
+                        sh 'python -m pytest'
                     }                    
                 }
                 stage('Test On Linux') {
                     
                     steps {
-                        sh 'python3 -m pytest'
+                        sh 'python -m pytest'
                     }
                 }
             }
